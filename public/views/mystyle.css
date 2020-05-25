@@ -1,0 +1,102 @@
+header{
+	position: relative;
+	text-align: center;
+}
+footer{
+	text-align: center;
+	font-family:"times new roman", serif;
+}
+h1{
+	color: cyan;
+	font-style: italic;
+	text-decoration: underline;
+	font-style: bold;
+	font-family: "monotypecorosiva",cursive;
+	font-size:  40px;
+}
+a{
+	height: 50px;
+	margin: 5px;
+	text-decoration : wavy;
+	color: yellow;
+	font-size: 20px;
+	font-family: "monotypecorosiva",cursive;
+
+}
+a:hover{
+	color: green;
+	font-size: 25px;
+	font-weight:  bold;
+}
+img{
+	margin-top: 15px;
+	margin-bottom: 0px;
+	width: 150px;
+	height: 200px;
+		
+}
+p{
+	font-size: 18px;
+	color: black;
+	text-decoration: bold;
+	font-family:"Times New Roman", Times;
+}
+.form1{
+	font-size: 18px;
+	color: black;
+	text-decoration: bold;
+	text-align:center;
+	font-family:"Times New Roman", Times;
+}
+.p1{
+	color: red;
+	display: inline;
+}
+.body1{
+	margin: 0px;
+	padding: 0px;
+	background-image: url('background.jpg');
+}
+#mybtn{
+	cursor: pointer;
+	border: red;
+    border-style: groove;
+    border-radius: 8px;
+    width: 80px;
+    border-width: 1.54px;
+    height: 25px;
+    background: content-box;
+}
+#mybtn:hover{
+	width: 85px;
+	height: 30px;
+	border: green;
+	 border-style: groove;
+	  border-width: 1.54px;
+	  background: content-box;
+    border-radius: 8px;
+	font-size: 22px;
+	text-decoration: bold;
+	text-align:center;
+	font-family:"Times New Roman", Times;
+}
+.form2{
+	background-color: lightblue;
+	width: 160px;
+    height: 20px;
+    margin: 5px;
+   	border-color: blue;
+    border-style: double;
+    border-radius: 5px;
+    border-width: 2px;
+    font-weight: bolder;
+    font-size: medium;
+    font-family: Times New Roman;
+}
+.result{
+	    margin: 0 auto;
+    border-color: violet;
+    border-style: groove;
+    width: fit-content;
+    margin-top: 30px;
+}

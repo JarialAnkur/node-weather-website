@@ -1,16 +1,4 @@
-console.log("Javascript file kicked off");
-/*fetch('http://localhost:3000/weather?address=!').then((response)=>{
-	response.json().then((data)=>{
-		if(data.error)
-		{
-			console.log("Cannot find Address !! Please try another search");
-		}
-		else
-		{console.log(data.Address);}
-	});
-	
-});
-*/
+
 
 document.getElementById("mybtn").addEventListener("click",(e)=>{
 	
@@ -25,7 +13,7 @@ var x= document.getElementById("error");
 
 if(zipcode.length!=0)
 	{
-		fetch('http://localhost:3000/weather?address=' + city+','+state+','+country+','+zipcode).then((response)=>{
+		fetch('/weather?address=' + city+','+state+','+country+','+zipcode).then((response)=>{
 			response.json().then((data)=>{
 				if(data.error)
 				{
@@ -61,7 +49,7 @@ if(zipcode.length!=0)
 }
 else
 {
-	fetch('http://localhost:3000/weather?address='+city+','+state+','+country).then((response)=>{
+	fetch('/weather?address='+city+','+state+','+country).then((response)=>{
 			response.json().then((data)=>{
 				if(data.error){
 					y.style.display="none";
@@ -112,7 +100,7 @@ var x= document.getElementById("error");
 }
 if(zipcode.length!=0)
 	{
-		fetch('http://localhost:3000/weather?address=' + city+','+state+','+country+','+zipcode).then((response)=>{
+		fetch('/weather?address=' + city+','+state+','+country+','+zipcode).then((response)=>{
 			response.json().then((data)=>{
 				if(data.error)
 				{
@@ -148,7 +136,7 @@ if(zipcode.length!=0)
 }
 else
 {
-	fetch('http://localhost:3000/weather?address='+city+','+state+','+country).then((response)=>{
+	fetch('/weather?address='+city+','+state+','+country).then((response)=>{
 			response.json().then((data)=>{
 				if(data.error){
 					y.style.display="none";
@@ -187,7 +175,3 @@ else
 });
 
 
-/*weatherform.addEventListener('submit', (e)=>{
-	e.preventDefault(); 
-	
-})*/

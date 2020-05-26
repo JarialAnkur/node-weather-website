@@ -1,6 +1,7 @@
  const path= require('path');
  const express=require('express');
  const app=express();
+ const port=process.env.PORT || 3000;
  const request = require('request');
  const hbs=require('hbs');
  app.set('view engine','hbs');
@@ -12,7 +13,7 @@ app.set('views',viewpath);
 
  app.get('/',(req, res)=>
  {
- 	//res.send('Hello! Express');
+ 	
  	res.render('index',{
  		title:'Weather',
  		name:'Ankur jarial'
@@ -85,26 +86,9 @@ app.set('views',viewpath);
 	});
 }
 });
- 	/*else
- 	{
- 		res.send({
- 			Address: req.query.address
- 		});
- 	}*/
+ 	
  });
- // app.get('/products',(req,res)=>
- // {
- // 	if(!req.query.search)
- // 	{
- // 		return res.send({
- // 			error:'must provide search'
- // 		});
- // 	}
- // 	console.log(req.query);
- // 	res.send({
- // 		products:[]
- // 	});
- // });
+
  app.get('*',(req,res)=>
  {
  	res.render('404',{
@@ -112,6 +96,6 @@ app.set('views',viewpath);
  		name:'Ankur Jarial'
  	});
  });
- app.listen(3000,()=>{
- 	console.log("Server is running smoothly on port 3000");
+ app.listen(port,()=>{
+ 	console.log("Server is running smoothly on port"+ port);
  });
